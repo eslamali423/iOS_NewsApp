@@ -18,7 +18,7 @@ public class APICaller {
     
     private init(){}
     
-    public func getTopStories (completion : @escaping (Result <[String], Error>)-> Void){
+     func getTopStories (completion : @escaping (Result <[Articles], Error>)-> Void){
         guard let url = Constants.mainURL else {
             // faild to reatch URL
             return
@@ -31,7 +31,7 @@ public class APICaller {
 
                 do {
            let result = try JSONDecoder().decode(APIResponse.self, from: data)
-                    print("Count = \(result.articles.count)")
+                    completion(.success(result.articles))
                 } catch{
                     completion(.failure(error))
                 }
