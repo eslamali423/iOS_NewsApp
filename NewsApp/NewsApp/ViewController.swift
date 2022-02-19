@@ -6,12 +6,15 @@
 //
 
 import UIKit
+import SafariServices
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
      
     var viewModel = [NewsTabelViewCellModel]()
+    var articles = [APICaller.Articles]()
+
     
     
     override func viewDidLoad() {
@@ -24,6 +27,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         APICaller.sheard.getTopStories { (result) in
             switch result {
             case .success(let articles):
+                self.articles = articles
                 self.viewModel = articles.compactMap({ NewsTabelViewCellModel(title: $0.title, subTitle: $0.description ?? "no discription", imageUrl: URL(string : $0.urlToImage ?? ""))
                 
                 })
@@ -53,10 +57,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = storyboard?.instantiateViewController(identifier: "ID") as! newsViewController
-        vc.modalPresentationStyle = .fullScreen
+        let article = self.articles[indexPath.row]
         
-        navigationController?.pushViewController(vc, animated: true)
+        guard  let url = URL(string: article.url ?? "") else {
+            return
+        }
+        let safariVC = SFSafariViewController(url: url)
+        present(safariVC, animated: true, completion: nil)
+        
+
+        
+
     }
     
     

@@ -49,7 +49,7 @@ public class APICaller {
         let articles : [Articles]
     }
     
-    struct Articles : Codable {
+   public struct Articles : Codable {
         let title : String
         let description : String?
         let url : String?
