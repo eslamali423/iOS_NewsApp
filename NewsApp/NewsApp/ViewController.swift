@@ -52,6 +52,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return 150
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(identifier: "ID") as! newsViewController
+        vc.modalPresentationStyle = .fullScreen
+        
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
         
     
