@@ -77,8 +77,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         guard  let text = searchBar.text , !text.isEmpty  else {
                        return
                    }
-           print(text)
-               }
+        
+        APICaller.sheard.search(with: text) { (result) in
+            switch result {
+            case .success(let articles):
+                self.articles = articles
+                self.viewModel = articles.compactMap({ NewsTabelViewCellModel(title: $0.title, subTitle: $0.description ?? "no discription", imageUrl: URL(string : $0.urlToImage ?? ""))
+                
+                })
+                print("success")
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            case .failure(let error) :
+                print("error")
+            }
+            }
+    
+    
+    }
     
 
     
