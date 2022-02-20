@@ -8,8 +8,9 @@
 import UIKit
 import SafariServices
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 
+    @IBOutlet weak var searchField: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
      
     var viewModel = [NewsTabelViewCellModel]()
@@ -21,8 +22,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        searchField.delegate = self
+        
         title = "News"
         view.backgroundColor = .systemBackground
+
+        navigationController?.navigationBar.topItem?.titleView =  searchField
         
         APICaller.sheard.getTopStories { (result) in
             switch result {
@@ -40,7 +45,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             }
         }
-    
+    // tabel view function
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.count
     }
@@ -65,15 +70,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let safariVC = SFSafariViewController(url: url)
         present(safariVC, animated: true, completion: nil)
         
-
-        
-
     }
     
     
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard  let text = searchBar.text , !text.isEmpty  else {
+                       return
+                   }
+           print(text)
+               }
+    
+
+    
+    
+    
         
     
 
 
-}
+}// class
 
