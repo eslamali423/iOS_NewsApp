@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280B36E727C7CC88002BC2D5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280B36E627C7CC88002BC2D5 /* API.swift */; };
 		28BC137727C028A600D0783E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BC137627C028A600D0783E /* AppDelegate.swift */; };
 		28BC137927C028A600D0783E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BC137827C028A600D0783E /* SceneDelegate.swift */; };
 		28BC137B27C028A600D0783E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BC137A27C028A600D0783E /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		016EDADF01F0B6553AB0C80F /* Pods_NewsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		280B36E627C7CC88002BC2D5 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		28BC137327C028A600D0783E /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28BC137627C028A600D0783E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28BC137827C028A600D0783E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				28BC138727C028A700D0783E /* Info.plist */,
 				28BC137F27C028A600D0783E /* NewsApp.xcdatamodeld */,
 				28BC138E27C02A0600D0783E /* APICaller.swift */,
+				280B36E627C7CC88002BC2D5 /* API.swift */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";
@@ -89,7 +92,6 @@
 				BA9FEFA83F1531E194067D21 /* Pods-NewsApp.debug.xcconfig */,
 				8175E47E5F56440A63EB111B /* Pods-NewsApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -221,6 +223,7 @@
 				28BC138127C028A600D0783E /* NewsApp.xcdatamodeld in Sources */,
 				28BC138F27C02A0600D0783E /* APICaller.swift in Sources */,
 				28BC137927C028A600D0783E /* SceneDelegate.swift in Sources */,
+				280B36E727C7CC88002BC2D5 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 public class APICaller {
     
     static let sheard = APICaller()
