@@ -24,7 +24,7 @@ class  API {
 
     func getData()  {
         guard let url =  Constants.mainURL else { return }
-     
+      
         }
         
         
