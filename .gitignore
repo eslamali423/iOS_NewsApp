@@ -1,0 +1,55 @@
+
+.DS_Store
+NewsApp/NewsApp.xcodeproj/xcuserdata/eslamali.xcuserdatad/xcschemes/xcschememanagement.plist
+NewsApp/NewsApp.xcworkspace/xcuserdata/eslamali.xcuserdatad/UserInterfaceState.xcuserstate
+NewsApp/NewsApp/API.swift
+NewsApp/NewsApp/APICaller.swift
+NewsApp/NewsApp/ViewController.swift
+NewsApp/Podfile
+NewsApp/Podfile.lock
+NewsApp/Pods/Kingfisher/LICENSE
+NewsApp/Pods/Kingfisher/README.md
+NewsApp/Pods/Kingfisher/Sources/AnimatedImageView.swift
+NewsApp/Pods/Kingfisher/Sources/Box.swift
+NewsApp/Pods/Kingfisher/Sources/CacheSerializer.swift
+NewsApp/Pods/Kingfisher/Sources/Filter.swift
+NewsApp/Pods/Kingfisher/Sources/FormatIndicatedCacheSerializer.swift
+NewsApp/Pods/Kingfisher/Sources/Image.swift
+NewsApp/Pods/Kingfisher/Sources/ImageCache.swift
+NewsApp/Pods/Kingfisher/Sources/ImageDownloader.swift
+NewsApp/Pods/Kingfisher/Sources/ImageModifier.swift
+NewsApp/Pods/Kingfisher/Sources/ImagePrefetcher.swift
+NewsApp/Pods/Kingfisher/Sources/ImageProcessor.swift
+NewsApp/Pods/Kingfisher/Sources/ImageTransition.swift
+NewsApp/Pods/Kingfisher/Sources/ImageView+Kingfisher.swift
+NewsApp/Pods/Kingfisher/Sources/Indicator.swift
+NewsApp/Pods/Kingfisher/Sources/Kingfisher.h
+NewsApp/Pods/Kingfisher/Sources/Kingfisher.swift
+NewsApp/Pods/Kingfisher/Sources/KingfisherManager.swift
+NewsApp/Pods/Kingfisher/Sources/KingfisherOptionsInfo.swift
+NewsApp/Pods/Kingfisher/Sources/Placeholder.swift
+NewsApp/Pods/Kingfisher/Sources/RequestModifier.swift
+NewsApp/Pods/Kingfisher/Sources/Resource.swift
+NewsApp/Pods/Kingfisher/Sources/String+MD5.swift
+NewsApp/Pods/Kingfisher/Sources/ThreadHelper.swift
+NewsApp/Pods/Kingfisher/Sources/UIButton+Kingfisher.swift
+NewsApp/Pods/Manifest.lock
+NewsApp/Pods/Pods.xcodeproj/project.pbxproj
+NewsApp/Pods/Pods.xcodeproj/xcuserdata/eslamali.xcuserdatad/xcschemes/Kingfisher.xcscheme
+NewsApp/Pods/Pods.xcodeproj/xcuserdata/eslamali.xcuserdatad/xcschemes/xcschememanagement.plist
+NewsApp/Pods/Target Support Files/Kingfisher/Kingfisher-dummy.m
+NewsApp/Pods/Target Support Files/Kingfisher/Kingfisher-Info.plist
+NewsApp/Pods/Target Support Files/Kingfisher/Kingfisher-prefix.pch
+NewsApp/Pods/Target Support Files/Kingfisher/Kingfisher-umbrella.h
+NewsApp/Pods/Target Support Files/Kingfisher/Kingfisher.debug.xcconfig
+NewsApp/Pods/Target Support Files/Kingfisher/Kingfisher.modulemap
+NewsApp/Pods/Target Support Files/Kingfisher/Kingfisher.release.xcconfig
+NewsApp/Pods/Target Support Files/Pods-NewsApp/Pods-NewsApp-acknowledgements.markdown
+NewsApp/Pods/Target Support Files/Pods-NewsApp/Pods-NewsApp-acknowledgements.plist
+NewsApp/Pods/Target Support Files/Pods-NewsApp/Pods-NewsApp-frameworks-Debug-input-files.xcfilelist
+NewsApp/Pods/Target Support Files/Pods-NewsApp/Pods-NewsApp-frameworks-Debug-output-files.xcfilelist
+NewsApp/Pods/Target Support Files/Pods-NewsApp/Pods-NewsApp-frameworks-Release-input-files.xcfilelist
+NewsApp/Pods/Target Support Files/Pods-NewsApp/Pods-NewsApp-frameworks-Release-output-files.xcfilelist
+NewsApp/Pods/Target Support Files/Pods-NewsApp/Pods-NewsApp-frameworks.sh
+NewsApp/Pods/Target Support Files/Pods-NewsApp/Pods-NewsApp.debug.xcconfig
+NewsApp/Pods/Target Support Files/Pods-NewsApp/Pods-NewsApp.release.xcconfig
